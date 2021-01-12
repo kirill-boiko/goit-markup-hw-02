@@ -17,6 +17,7 @@ body {
   color: var(--title-text-color);
 
   font-family: Roboto, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -53,12 +54,11 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.contacts-list .link:hover,
 .nav-main .link:hover,
-.nav-main .link:focus {
-  color: var(--accent-color);
-}
-
-.nav-main .link.current {
+.nav-main .link:focus,
+.nav-main .link.current,
+.contacts-list .link:focus {
   color: var(--accent-color);
 }
 
@@ -71,11 +71,6 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.contacts-list .link:hover,
-.contacts-list .link:focus {
-  color: var(--accent-color);
 }
 
 /* Hero */
@@ -147,9 +142,14 @@ ul {
   font-style: normal;
 }
 
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--accent-color);
+}
+
 /* footer logo */
 
-.studio {
+.footer .logo {
   color: var(--primary-white-color);
 }
 
@@ -173,6 +173,10 @@ ul {
 
 .button.secondary {
   background-color: #f5f4fa;
+}
+.hero .button {
+  cursor: pointer;
+  line-height: 1.87;
 }
 
 /* portfolio */
